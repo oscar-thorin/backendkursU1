@@ -16,22 +16,6 @@ Kortfattat, när webbläsaren navigerar till ovan länkad URI, så utför den en
 
 **PUT**: Används för att skicka data till en server genom att skapa eller uppdatera. Precis som POST.
 
-"http://localhost:3000/users?username=something" är en URI, beskriv vilka delar den består av och vad de kallas.
-
-vad som står egentligen är "[http://localhost:3000/path?key=value](http://localhost:3000/path?key=value)".
-
--   *localhost* är en **domän**.
-    
--   *3000* är en **port**.
-    
--   */users* är en **path**
-    
--   *?username=something* är en **query string**
-    
--   hela länken är en **URL** *(egentligen en **URI**, men https:// är med och därför ska det kallas en URL)*
-    
--   *https://* är **protokollet** på hur du får tillgång till sidan.
-
 ### 3. På vilka tre sätt kan man skicka in parametrar i en HTTP-request? Ge exempel med varje typ av parameter med curl, beskriv vilken typ av parameter som skickas in och värdet av parametern i respektive exempel.
 
 De tre olika sätt du kan använda parametrar i en HTTP-request är följande:
@@ -68,6 +52,20 @@ Så det som står i exemplet kan man skriva om till:
 
 Här skickar jag en http post request, med json data, till servern som specificerar att det jag skickar in som header parameter är att min data jag skickar i requesten är json. Detta kan man se i -H "Content-Type: application/json"
 
+### 4. "http://localhost:3000/users?username=something" är en URI, beskriv vilka delar den består av och vad de kallas.
 
+vad som står egentligen är "[http://localhost:3000/path?key=value](http://localhost:3000/path?key=value)".
+
+-   *localhost* är en **domän**.
+    
+-   *3000* är en **port**.
+    
+-   */users* är en **path**
+    
+-   *?username=something* är en **query string**
+    
+-   hela länken är en **URL** *(egentligen en **URI**, men https:// är med och därför ska det kallas en URL)*
+    
+-   *https://* är **protokollet** på hur du får tillgång till sidan.
 
 
